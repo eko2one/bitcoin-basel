@@ -16,6 +16,7 @@
     "bulma": "^0.9.4"
   },
   "dependencies": {
-    "node-sass": "^7.0.3"
+    "node-sass": "^7.0.3",
+    "rollup": "^3.3.0"
   }
 }
