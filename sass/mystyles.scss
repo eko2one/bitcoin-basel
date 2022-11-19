@@ -1,0 +1,160 @@
+@charset "utf-8";
+
+// Import a Google Font
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
+
+// Set your brand colors
+$btcorange: #FF9900;
+$midnight-blue: #34495e;
+$pink: #FA7C91;
+$brown: #757763;
+$beige-light: #D0D1CD;
+$beige-lighter: #EFF0EB;
+
+// Update Bulma's global variables
+$family-sans-serif: "Nunito", sans-serif;
+$grey-dark: $brown;
+$grey-light: $beige-light;
+$primary: $btcorange;
+$link: $midnight-blue;
+$widescreen-enabled: false;
+$fullhd-enabled: false;
+
+// Update some of Bulma's component variables
+$body-background-color: $beige-lighter;
+$control-border-width: 2px;
+$input-border-color: transparent;
+$input-shadow: none;
+
+//  table
+$table-head-background-color: $midnight-blue;
+$table-body-background-color: $midnight-blue;
+$table-row-hover-background-color: $btcorange;
+$table-head-cell-color: $beige-lighter;
+$table-color: #fff;
+
+//  footer
+$footer-background-color: $midnight-blue;
+$footer-color: #fff;
+$footer-padding: 3rem 1.5rem 3rem;
+
+// Container Width
+//$container-max-width: 960px;
+
+// Import only what you need from Bulma
+@import "../node_modules/bulma/sass/layout/_all.sass";
+@import "../node_modules/bulma/sass/utilities/_all.sass";
+@import "../node_modules/bulma/sass/base/_all.sass";
+@import "../node_modules/bulma/sass/elements/_all";
+@import "../node_modules/bulma/sass/form/_all.sass";
+@import "../node_modules/bulma/sass/components/_all.sass";
+
+@import "../node_modules/bulma/sass/helpers/_all.sass";
+@import "../node_modules/bulma/sass/grid/columns.sass";
+
+html {
+  scroll-behavior: smooth;
+}
+
+#hero {
+  padding-bottom: 0!important;
+}
+
+#bitcoin {
+  position: absolute;
+  width: 200px;
+  left: 50%;
+  transform: translate(-50%, 21%);
+}
+
+.no-padding {
+  padding: 0!important;
+}
+
+#intro {
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+#intro_link {
+  text-align: center;
+  display: block;
+}
+
+div#headline {
+  font-family: 'TheBoldFont';
+  color: #34495e;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 8em;
+  letter-spacing: 5px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@font-face {
+  font-family: 'TheBoldFont';
+  src: url('../static/fonts/TheBoldFont.woff2') format('woff2'),
+      url('../static/fonts/TheBoldFont.woff') format('woff'),
+      url('../static/fonts/TheBoldFont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+img.is-service-image {
+  background-color: $midnight-blue;
+}
+
+.card:hover img.is-service-image {
+  background-color: $btcorange;
+}
+
+img#banner-img {
+  width: 100%;
+  background: #fff;
+  border-radius: 15px;
+}
+
+img.is-cover {
+  object-fit: cover;
+}
+
+.card {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.card:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.media-left .image img {
+  background-color: $midnight-blue;
+}
+
+a.twitter-link {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+a.twitter-link:hover {
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 900px) {
+
+  #bitcoin {
+    width: 80px;
+  }
+
+  div#headline {
+    font-size: 2.5em;
+    letter-spacing: 2px;
+  }
+
+  .hide-col-on-mobile{
+      display: none;
+  }
+}

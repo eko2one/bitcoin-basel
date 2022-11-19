@@ -1,0 +1,24 @@
+article.media 
+  figure.media-left 
+    p.image.is-128x128 
+      block media-image
+        img(src="./static/img/media-placeholder.png", alt="Placeholder", srcset="")
+  div.media-content 
+    .content 
+      block media-title
+        h3 Media Title
+
+      .tags
+        block media-tag
+          span.tag.is-warning.is-light Awesome Thing   
+
+      block media-descr
+        p  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis. 
+        
+      block media-level 
+        nav.level
+          .level-right 
+            .level-item 
+              block media-button
+                button.button.is-primary Click Me
+      
