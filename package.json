@@ -18,6 +18,7 @@
     "sass": "^1.56.1"
   },
   "dependencies": {
+    "buefy": "^0.9.22",
     "rollup": "^3.3.0"
   }
 }
