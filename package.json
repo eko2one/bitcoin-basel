@@ -2,12 +2,7 @@
   "name": "bitcoin-basel",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
-    "css-build": "node-sass --omit-source-map-url sass/mystyles.scss css/mystyles.css",
-    "css-watch": "npm run css-build -- --watch",
-    "build-html": "pug index.pug --watch",
-    "start": "npm run css-watch"
   },
   "keywords": [],
   "author": "",
@@ -15,10 +10,9 @@
   "devDependencies": {
     "bulma": "^0.9.4",
     "rollup-plugin-scss": "^3.0.0",
-    "sass": "^1.56.1"
+    "sass": "^1.56.1",
+    "rollup": "^3.3.0"
   },
   "dependencies": {
-    "buefy": "^0.9.22",
-    "rollup": "^3.3.0"
   }
 }
