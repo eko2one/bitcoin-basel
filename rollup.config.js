@@ -10,6 +10,7 @@ export default {
     scss({
       output: "./build/style.css",
       failOnError: true,
+      outputStyle: 'compressed'
     })
   ],
 }
