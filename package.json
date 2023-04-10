@@ -2,17 +2,15 @@
   "name": "bitcoin-basel",
   "version": "1.0.0",
   "description": "",
-  "scripts": {
-  },
+  "scripts": {},
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.1.0-9",
     "bulma": "^0.9.4",
+    "rollup": "^3.3.0",
     "rollup-plugin-scss": "^3.0.0",
-    "sass": "^1.56.1",
-    "rollup": "^3.3.0"
-  },
-  "dependencies": {
+    "sass": "^1.56.1"
   }
 }
