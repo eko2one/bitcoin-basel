@@ -25,7 +25,7 @@ jobs:
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
         local-dir: ./build/
-        server: ${{ variables.server }}
-        username: ${{ variables.username }}
+        server: ${{ secrets.hostname }}
+        username: ${{ secrets.username }}
         password: ${{ secrets.password }}
         dry-run: true
