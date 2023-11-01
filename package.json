@@ -2,7 +2,6 @@
   "name": "bitcoin-basel",
   "version": "1.0.0",
   "description": "",
-  "scripts": {},
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -12,5 +11,9 @@
     "rollup": "^3.3.0",
     "rollup-plugin-scss": "^3.0.0",
     "sass": "^1.56.1"
+  },
+  "scripts": {
+    "build": "./build.sh"
   }
+ 
 }
