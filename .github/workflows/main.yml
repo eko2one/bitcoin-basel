@@ -24,9 +24,9 @@ jobs:
     - name: FTP Deployer
       uses: sand4rt/ftp-deployer@v1.7
       with:
-        sftp: false # optional
+        sftp: true # optional
         host: ${{ secrets.HOSTNAME }} # e.g. ftp.host.com or sftp.host.com (without ftp:// or ftps://)
-        port: 21 # optional, default is: 21
+        port: 22 # optional, default is: 21
         username: ${{ secrets.username }} # FTP username
         password: ${{ secrets.password }} # FTP password
         # remote_folder: ${{ secrets.FTP_REMOTE_FOLDER }} # optional, remote path of your FTP server
